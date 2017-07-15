@@ -47,10 +47,6 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
             pgCtrl.currentPage = 0
             pgCtrl.pageIndicatorTintColor = UIColor.lightGray
             pgCtrl.currentPageIndicatorTintColor = UIColor.orange
-            // TODO:颜色
-            pgCtrl.backgroundColor = UIColor.yellow
-            collectionView.backgroundColor = UIColor.green
-            
         }
         didSet{
             pgCtrl.numberOfPages = (arrMenu.count + countRow * countRow - 1) / (countRow * countRow)
@@ -97,17 +93,12 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
             //.convertDirectionCount(Number: indexPath.row);
         if indexChanged < arrMenu.count {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cCell", for: indexPath) as! CoolSlidingMenuCollectionViewCell
-            // TODO:颜色
-            cell.backgroundColor = UIColor.cyan
-            cell.contentView.backgroundColor = UIColor.lightGray
             let dicMenu:Dictionary = arrMenu[indexChanged] as! Dictionary<String, Any>
             cell.dicMenu = dicMenu
             return cell
         }
         else {
-            // TODO:颜色
             let cell = collectionView .dequeueReusableCell(withReuseIdentifier: "blankCell", for: indexPath)
-            cell.backgroundColor = UIColor.purple
             cell.isUserInteractionEnabled = false
             return cell
         }

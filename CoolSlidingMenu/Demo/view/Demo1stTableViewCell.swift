@@ -40,9 +40,6 @@ class Demo1stTableViewCell: UITableViewCell,CoolSlidingMenuViewDelegate {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        // TODO:颜色
-        self.contentView.backgroundColor = UIColor.red
-        slidingMenuView.backgroundColor = UIColor.orange
         slidingMenuView.contentMode = .scaleAspectFit
         slidingMenuView.frame = CGRect(x: 0, y: 0, width: self.contentView.bounds.size.width, height: self.contentView.bounds.size.height)
     }

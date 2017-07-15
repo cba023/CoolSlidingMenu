@@ -25,7 +25,7 @@ class CoolSlidingMenuManager: NSObject {
         let tempH = number / (colCount * rowCount)
         let tempL = number % (colCount * rowCount)
         let result:Int = tempL - (tempL / rowCount) * (rowCount - 1) + tempL % rowCount * (colCount - 1) + tempH * (colCount * rowCount)
-        print("排序前:",number,"行数：",rowCount, "列数：" ,"tempH:",tempH,"tempL:",tempL, colCount,"----->",result)
+//        print("排序前:",number,"行数：",rowCount, "列数：" ,"tempH:",tempH,"tempL:",tempL, colCount,"----->",result)
         return result
     }
 
