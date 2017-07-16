@@ -30,6 +30,7 @@ class Demo1stTableViewCell: UITableViewCell,CoolSlidingMenuViewDelegate {
         super .init(style: style, reuseIdentifier: reuseIdentifier)
         slidingMenuView = CoolSlidingMenuView()
         slidingMenuView.delegate = self
+        self.selectionStyle = .none
         self.contentView.addSubview(slidingMenuView)
     }
     

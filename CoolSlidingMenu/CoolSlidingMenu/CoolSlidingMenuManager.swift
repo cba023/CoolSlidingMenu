@@ -15,13 +15,6 @@ class CoolSlidingMenuManager: NSObject {
     }
     
     func convertDirectionCount(Number number:Int, RowCount rowCount: Int, ColCount colCount: Int) -> Int {
-        //        if number % ColCount == 0 {
-        //            return number - number % (RowCount * ColCount) / ColCount
-        //        }
-        //        else {
-        //            return (((RowCount * ColCount) - 1) - number % (RowCount * ColCount)) / ColCount + number;
-        //        }
-
         let tempH = number / (colCount * rowCount)
         let tempL = number % (colCount * rowCount)
         let result:Int = tempL - (tempL / rowCount) * (rowCount - 1) + tempL % rowCount * (colCount - 1) + tempH * (colCount * rowCount)

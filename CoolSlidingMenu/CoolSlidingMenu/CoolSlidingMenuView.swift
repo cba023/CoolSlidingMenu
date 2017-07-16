@@ -18,9 +18,6 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
     
     var countRow:Int!
     var countCol:Int!
-    // MARK: 设置通用布局参数
-//    var widthCollectionView:CGFloat = 0
-//    var heightCollectionView:CGFloat = 1
     
     var collectionView:UICollectionView!
     var pgCtrl = UIPageControl()
@@ -47,9 +44,10 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
             pgCtrl.currentPage = 0
             pgCtrl.pageIndicatorTintColor = UIColor.lightGray
             pgCtrl.currentPageIndicatorTintColor = UIColor.orange
+//            pgCtrl.addTarget(self, action: #selector(pgCtrlClicked), for: .valueChanged)
         }
         didSet{
-            pgCtrl.numberOfPages = (arrMenu.count + countRow * countRow - 1) / (countRow * countRow)
+            pgCtrl.numberOfPages = (arrMenu.count + countRow * countRow - 1) / (countRow * countRow) / 2
             collectionView.reloadData()
         }
     }
@@ -61,8 +59,6 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
         
     }
     
-    
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -72,10 +68,15 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
         let widthPgCtrl = pgCtrl.size(forNumberOfPages: pgCtrl.numberOfPages).width
         pgCtrl.frame = CGRect(x: (self.bounds.width - widthPgCtrl) / 2, y: self.bounds.size.height - 12, width: widthPgCtrl, height: 12)
         
+        
         //        // MARK:背景色设置，用于调试
         //        self.backgroundColor = UIColor.red
         //        collectionView.backgroundColor = UIColor.yellow
     }
+    
+//    func pgCtrlClicked(_ sender: UIPageControl) {
+//        print(pgCtrl.currentPage)
+//    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
