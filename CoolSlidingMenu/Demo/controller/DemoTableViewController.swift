@@ -13,8 +13,8 @@ class DemoTableViewController: UITableViewController {
     var dataDic:Dictionary<String, Any>! = nil
     var arrIcon:Array<Any>! = nil
     var arrMenu:Array<Any>! = nil
-    var countRow:Int = 2
-    var countCol:Int = 5
+    public var countRow:Int!
+    public var countCol:Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
