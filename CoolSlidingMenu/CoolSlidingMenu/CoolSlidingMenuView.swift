@@ -10,6 +10,11 @@ import UIKit
 
 @objc protocol CoolSlidingMenuViewDelegate:NSObjectProtocol {
     
+    /// coolSlidingMenu
+    ///
+    /// - Parameters:
+    ///   - slidingBoxMenu: slidingBoxMenu
+    ///   - index: index
     @objc optional func coolSlidingMenu(_ slidingBoxMenu: CoolSlidingMenuView, didSelectedItemAt index: Int);
     
 }
@@ -18,7 +23,9 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
     
     var countRow:Int!
     var countCol:Int!
-    
+    public var pgCtrlNormalColor: UIColor = .lightGray
+    public var pgCtrlSelectedColor: UIColor = .orange
+    public var pgCtrlIsHidden:Bool = false
     var collectionView:UICollectionView!
     var pgCtrl = UIPageControl()
     public var arrMenu:Array<Any> = [] {
@@ -41,13 +48,16 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
             collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "blankCell")
             self.addSubview(collectionView)
             self.addSubview(pgCtrl)
-            pgCtrl.currentPage = 0
-            pgCtrl.pageIndicatorTintColor = UIColor.lightGray
-            pgCtrl.currentPageIndicatorTintColor = UIColor.orange
-//            pgCtrl.addTarget(self, action: #selector(pgCtrlClicked), for: .valueChanged)
+            if pgCtrlIsHidden == false {
+                pgCtrl.currentPage = 0
+                pgCtrl.pageIndicatorTintColor = pgCtrlNormalColor
+                pgCtrl.currentPageIndicatorTintColor = pgCtrlSelectedColor
+            }
+            
         }
         didSet{
-            pgCtrl.numberOfPages = (arrMenu.count + countRow * countRow - 1) / (countRow * countRow) / 2
+//            pgCtrl.numberOfPages = (arrMenu.count + countRow * countCol - 1) / (countRow * countCol)
+            pgCtrl.numberOfPages = arrMenu.count > countCol * countRow ? (arrMenu.count + countRow * countCol - 1) / (countRow * countCol) : 0
             collectionView.reloadData()
         }
     }
@@ -67,16 +77,7 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
         super.layoutSubviews()
         let widthPgCtrl = pgCtrl.size(forNumberOfPages: pgCtrl.numberOfPages).width
         pgCtrl.frame = CGRect(x: (self.bounds.width - widthPgCtrl) / 2, y: self.bounds.size.height - 12, width: widthPgCtrl, height: 12)
-        
-        
-        //        // MARK:背景色设置，用于调试
-        //        self.backgroundColor = UIColor.red
-        //        collectionView.backgroundColor = UIColor.yellow
     }
-    
-//    func pgCtrlClicked(_ sender: UIPageControl) {
-//        print(pgCtrl.currentPage)
-//    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

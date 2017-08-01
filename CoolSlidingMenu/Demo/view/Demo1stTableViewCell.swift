@@ -12,11 +12,16 @@ class Demo1stTableViewCell: UITableViewCell,CoolSlidingMenuViewDelegate {
     
     public var countRow:Int! 
     public var countCol:Int!
+    public var pgCtrlNormalColor: UIColor!
+    public var pgCtrlSelectedColor: UIColor!
+    public var pgCtrlShouldHidden: Bool!
     
     var slidingMenuView:CoolSlidingMenuView = CoolSlidingMenuView()
     public var arrMenu:Array<Any> = [] {
         willSet {
-            
+            slidingMenuView.pgCtrl.isHidden = pgCtrlShouldHidden
+            slidingMenuView.pgCtrlNormalColor = pgCtrlNormalColor
+            slidingMenuView.pgCtrlSelectedColor = pgCtrlSelectedColor
             slidingMenuView.countRow = countRow
             slidingMenuView.countCol = countCol
         }
