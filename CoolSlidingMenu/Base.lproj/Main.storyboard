@@ -49,13 +49,13 @@
                                 <rect key="frame" x="211" y="484" width="94" height="29"/>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahZ-TO-9Jv">
-                                <rect key="frame" x="133" y="488" width="11" height="21"/>
+                                <rect key="frame" x="132" y="488" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="countOfMenu:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfa-5H-2kb">
-                                <rect key="frame" x="15" y="488" width="110" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="countOfItems:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfa-5H-2kb">
+                                <rect key="frame" x="15" y="488" width="109" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,7 +66,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="neN-4w-5Fj"/>
                                 </constraints>
-                                <state key="normal" title="Let's go!"/>
+                                <state key="normal" title="GO"/>
                                 <connections>
                                     <action selector="btnBottomClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oeh-az-FGY"/>
                                 </connections>
@@ -126,13 +126,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="update on 2017/8/1 by Swift 3.1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QqS-9i-2Z0">
-                                <rect key="frame" x="115" y="111" width="190" height="20.5"/>
+                                <rect key="frame" x="115" y="111" width="190" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="author: Chen Bo (China)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw2-ZO-pbE">
-                                <rect key="frame" x="115" y="139.5" width="190" height="21"/>
+                                <rect key="frame" x="115" y="160" width="190" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

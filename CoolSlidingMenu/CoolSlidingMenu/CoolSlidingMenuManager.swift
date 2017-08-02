@@ -10,10 +10,6 @@ import UIKit
 
 class CoolSlidingMenuManager: NSObject {
     static public let manager = CoolSlidingMenuManager()
-    private override init() {
-        // 静默处理
-    }
-    
     func convertDirectionCount(Number number:Int, RowCount rowCount: Int, ColCount colCount: Int) -> Int {
         let tempH = number / (colCount * rowCount)
         let tempL = number % (colCount * rowCount)
