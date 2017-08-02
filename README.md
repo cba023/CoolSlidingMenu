@@ -1,2 +1,4 @@
 #CoolSlidingMenu
-侧滑菜单，任意行数和列数
+
+
+![User guide](https://raw.githubusercontent.com/cba023/CoolSlidingMenu/master/CoolSlidingMenu/CoolSlidingMenu/desc.gif)
