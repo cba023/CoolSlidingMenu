@@ -66,7 +66,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="neN-4w-5Fj"/>
                                 </constraints>
-                                <state key="normal" title="点击此处跳转页面"/>
+                                <state key="normal" title="Let's go!"/>
                                 <connections>
                                     <action selector="btnBottomClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oeh-az-FGY"/>
                                 </connections>
