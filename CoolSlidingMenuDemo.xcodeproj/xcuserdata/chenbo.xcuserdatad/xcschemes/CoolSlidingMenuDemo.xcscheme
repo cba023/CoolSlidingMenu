@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "78D4CBE11F19CEE900406EFD"
-               BuildableName = "CoolSlidingMenu.app"
-               BlueprintName = "CoolSlidingMenu"
-               ReferencedContainer = "container:CoolSlidingMenu.xcodeproj">
+               BlueprintIdentifier = "783038F41F36B6F3000CBF62"
+               BuildableName = "CoolSlidingMenuDemo.app"
+               BlueprintName = "CoolSlidingMenuDemo"
+               ReferencedContainer = "container:CoolSlidingMenuDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "78D4CBF81F19CEE900406EFD"
-               BuildableName = "CoolSlidingMenuTests.xctest"
-               BlueprintName = "CoolSlidingMenuTests"
-               ReferencedContainer = "container:CoolSlidingMenu.xcodeproj">
+               BlueprintIdentifier = "7830390B1F36B6F3000CBF62"
+               BuildableName = "CoolSlidingMenuDemoTests.xctest"
+               BlueprintName = "CoolSlidingMenuDemoTests"
+               ReferencedContainer = "container:CoolSlidingMenuDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "78D4CC031F19CEE900406EFD"
-               BuildableName = "CoolSlidingMenuUITests.xctest"
-               BlueprintName = "CoolSlidingMenuUITests"
-               ReferencedContainer = "container:CoolSlidingMenu.xcodeproj">
+               BlueprintIdentifier = "783039161F36B6F3000CBF62"
+               BuildableName = "CoolSlidingMenuDemoUITests.xctest"
+               BlueprintName = "CoolSlidingMenuDemoUITests"
+               ReferencedContainer = "container:CoolSlidingMenuDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "78D4CBE11F19CEE900406EFD"
-            BuildableName = "CoolSlidingMenu.app"
-            BlueprintName = "CoolSlidingMenu"
-            ReferencedContainer = "container:CoolSlidingMenu.xcodeproj">
+            BlueprintIdentifier = "783038F41F36B6F3000CBF62"
+            BuildableName = "CoolSlidingMenuDemo.app"
+            BlueprintName = "CoolSlidingMenuDemo"
+            ReferencedContainer = "container:CoolSlidingMenuDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "78D4CBE11F19CEE900406EFD"
-            BuildableName = "CoolSlidingMenu.app"
-            BlueprintName = "CoolSlidingMenu"
-            ReferencedContainer = "container:CoolSlidingMenu.xcodeproj">
+            BlueprintIdentifier = "783038F41F36B6F3000CBF62"
+            BuildableName = "CoolSlidingMenuDemo.app"
+            BlueprintName = "CoolSlidingMenuDemo"
+            ReferencedContainer = "container:CoolSlidingMenuDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "78D4CBE11F19CEE900406EFD"
-            BuildableName = "CoolSlidingMenu.app"
-            BlueprintName = "CoolSlidingMenu"
-            ReferencedContainer = "container:CoolSlidingMenu.xcodeproj">
+            BlueprintIdentifier = "783038F41F36B6F3000CBF62"
+            BuildableName = "CoolSlidingMenuDemo.app"
+            BlueprintName = "CoolSlidingMenuDemo"
+            ReferencedContainer = "container:CoolSlidingMenuDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

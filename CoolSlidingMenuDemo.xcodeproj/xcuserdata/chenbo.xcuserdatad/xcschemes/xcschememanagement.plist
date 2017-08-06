@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CoolSlidingMenu.xcscheme</key>
+		<key>CoolSlidingMenuDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>78D4CBE11F19CEE900406EFD</key>
+		<key>783038F41F36B6F3000CBF62</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>78D4CBF81F19CEE900406EFD</key>
+		<key>7830390B1F36B6F3000CBF62</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>78D4CC031F19CEE900406EFD</key>
+		<key>783039161F36B6F3000CBF62</key>
 		<dict>
 			<key>primary</key>
 			<true/>

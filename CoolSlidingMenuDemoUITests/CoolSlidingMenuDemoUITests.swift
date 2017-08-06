@@ -1,14 +1,14 @@
 //
-//  CoolSlidingMenuUITests.swift
-//  CoolSlidingMenuUITests
+//  CoolSlidingMenuDemoUITests.swift
+//  CoolSlidingMenuDemoUITests
 //
-//  Created by 陈波 on 2017/7/15.
+//  Created by 陈波 on 2017/8/6.
 //  Copyright © 2017年 陈波. All rights reserved.
 //
 
 import XCTest
 
-class CoolSlidingMenuUITests: XCTestCase {
+class CoolSlidingMenuDemoUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
