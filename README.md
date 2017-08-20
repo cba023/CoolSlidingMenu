@@ -1,8 +1,8 @@
-![CoolSlidingMenu: Elegant Networking in Swift](http://upload-images.jianshu.io/upload_images/2484280-ae9929e9a3bdf56d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![CoolSlidingMenu](http://upload-images.jianshu.io/upload_images/2484280-ae9929e9a3bdf56d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #CoolSlidingMenu
 
-##开发环境
+## 开发环境
 
  Mac OS 10.12+ / Xcode 8+ / Swift 3+
 ## 支持环境
