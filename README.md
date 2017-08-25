@@ -91,7 +91,7 @@ func convertDirectionCount(Number number:Int, RowCount rowCount: Int, ColCount c
     }
 ```
 
-经过转换，滑动菜单就从纵向排列转化位纵向排列了。  亲，懂了吗？赶快去嗨皮吧！
+经过转换，滑动菜单就从纵向排列转化为横向排列了。 亲，懂了吗？赶快去嗨皮吧！
 ##  致读者
 
 该项目已经上传至github中[CoolSlidingMenu](https://github.com/cba023/CoolSlidingMenu)(https://github.com/cba023/CoolSlidingMenu)，可以在那里直接star 或者fork 该项目，它可能会长期的帮助您高效地进行程序开发，当然也欢迎留言，有不足或者错误的地方可以随时指正，您的指导和建议是我前行路上新的动力！
