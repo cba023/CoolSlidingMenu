@@ -2,12 +2,12 @@
 
 #CoolSlidingMenu
 
-## 开发环境（exploitation environment）
+## 开发环境（Development environment）
 
  Mac OS 10.12+ / Xcode 8+ / Swift 3+
-## 支持环境（support environment）
+## 支持环境（Support environment）
 iOS 8+, iPhone & iPad
-## 项目获取（project acquisition）
+## 项目获取（Project acquisition）
 此处代码由Swift3.1展示，推荐使用Swift项目已经上传至github中（The code here is shown by Swift3.1, and the Swift project is recommended for uploading to GitHub）[CoolSlidingMenu](https://github.com/cba023/CoolSlidingMenu)(https://github.com/cba023/CoolSlidingMenu)
 若要使用，请导入文件到您的项目。（To use, import the file into your project）
 简书地址（Address of JianShu）：http://www.jianshu.com/p/375fe7984571
@@ -15,8 +15,8 @@ iOS 8+, iPhone & iPad
 ## 功能展示（Demonstrate）
 ![User guide](http://upload-images.jianshu.io/upload_images/2484280-480a97d166e5e734.gif?imageMogr2/auto-orient/strip)
 
-## 使用说明（direction for use）
-### 导入项目（lead-in groove）
+## 使用说明（Guides）
+### 导入项目（Import Means）
 #### 1. 手动导入（Manual import）
 ![手动导入项目需要将该文件夹的所有内容引入项目中](http://upload-images.jianshu.io/upload_images/2484280-69a18c4e2d12e6ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)（Manual import projects need to bring all of the contents of the folder into the project）
 
