@@ -4,7 +4,7 @@
 
 ## 开发环境（Development environment）
 
- Mac OS 10.12+ / Xcode 8+ / Swift 3+
+ Mac OS 10.12+ / Xcode 8+ / Swift 3+ ,兼容Swift4(support Swift4)
 ## 支持环境（Support environment）
 iOS 8+, iPhone & iPad
 ## 项目获取（Project acquisition）
