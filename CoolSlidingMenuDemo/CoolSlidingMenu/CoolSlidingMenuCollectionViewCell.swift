@@ -12,10 +12,11 @@ class CoolSlidingMenuCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var imgViewIcon: UIImageView!
     @IBOutlet weak var lblTitle: UILabel!
-    public var dicMenu:Dictionary<String, Any>! = nil {
+    public var dicMenu:Dictionary<String, String>! = nil {
         didSet {
-            imgViewIcon.image = UIImage(named: dicMenu["image"] as! String)
-            lblTitle.text = dicMenu["title"] as? String
+            imgViewIcon.image = UIImage(named: dicMenu["image"]!)
+            lblTitle.textColor = .black
+            lblTitle.text = dicMenu["title"]
             lblTitle.adjustsFontSizeToFitWidth = true
         }
     }

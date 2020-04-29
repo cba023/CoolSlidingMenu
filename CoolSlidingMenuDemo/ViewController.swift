@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .lightGray
         setUIAndData()
     }
     
@@ -56,15 +57,15 @@ class ViewController: UIViewController {
         stepperItemsCount.addTarget(self, action: #selector(stepperValueChanged), for: .touchUpInside)
     }
     
-    func segPgCtrlNormalColorValueChanged(sender: UISegmentedControl) {
+    @objc func segPgCtrlNormalColorValueChanged(sender: UISegmentedControl) {
         pgCtrlNormalColor = sender.selectedSegmentIndex == 0 ? .lightGray : .yellow
     }
     
-    func segPgCtrlSelectedColorValueChanged(sender: UISegmentedControl) {
+    @objc func segPgCtrlSelectedColorValueChanged(sender: UISegmentedControl) {
         pgCtrlSelectedColor = sender.selectedSegmentIndex == 0 ? .red : .orange
     }
     
-    func stepperValueChanged() {
+    @objc func stepperValueChanged() {
         lblRows.text = String(Int(stepperRowsCount.value))
         lblCols.text = String(Int(stepperColsCount.value))
         lblItemsCount.text = String(Int(stepperItemsCount.value))

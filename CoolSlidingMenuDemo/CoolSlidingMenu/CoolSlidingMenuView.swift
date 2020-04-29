@@ -28,7 +28,7 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
     public var pgCtrlIsHidden:Bool = false
     var collectionView:UICollectionView!
     var pgCtrl = UIPageControl()
-    public var arrMenu:Array<Any> = [] {
+    var arrMenu:Array<Dictionary<String,String>> = [] {
         willSet {
             let layout = UICollectionViewFlowLayout()
             let sideLength = UIScreen.main.bounds.width / CGFloat(countCol)
@@ -57,7 +57,15 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
         }
         didSet{
 //            pgCtrl.numberOfPages = (arrMenu.count + countRow * countCol - 1) / (countRow * countCol)
-            pgCtrl.numberOfPages = arrMenu.count > countCol * countRow ? (arrMenu.count + countRow * countCol - 1) / (countRow * countCol) : 0
+            if arrMenu.count > countCol * countRow {
+                let a = arrMenu.count + countRow * countCol - 1
+                let b = countRow * countCol
+                let pageCount: Int = a / b
+                pgCtrl.numberOfPages = pageCount
+            } else {
+                pgCtrl.numberOfPages = 0
+            }
+//            pgCtrl.numberOfPages = (arrMenu.count > countCol * countRow) ? (arrMenu.count + countRow * countCol - 1) / (countRow * countCol) : 0
             collectionView.reloadData()
         }
     }
@@ -66,6 +74,7 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .white
         
     }
     
@@ -84,8 +93,10 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let countSet = (arrMenu.count + (countRow * countCol - 1)) / (countRow * countCol) * (countRow * countCol)  // 先去掉尾数，再补缺
-        return countSet
+        let a = arrMenu.count + (countRow * countCol - 1)
+        let b = a / (countRow * countCol) // 先去掉尾数，再补缺
+        let c = b * (countRow * countCol) // 先去掉尾数，再补缺,不能省去
+        return c
     }
     
     
@@ -95,7 +106,7 @@ class CoolSlidingMenuView: UIView,UICollectionViewDelegate,UICollectionViewDataS
             //.convertDirectionCount(Number: indexPath.row);
         if indexChanged < arrMenu.count {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cCell", for: indexPath) as! CoolSlidingMenuCollectionViewCell
-            let dicMenu:Dictionary = arrMenu[indexChanged] as! Dictionary<String, Any>
+            let dicMenu = arrMenu[indexChanged]
             cell.dicMenu = dicMenu
             return cell
         }

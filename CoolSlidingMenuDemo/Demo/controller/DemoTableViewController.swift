@@ -12,7 +12,7 @@ class DemoTableViewController: UITableViewController {
     
     var dataDic:Dictionary<String, Any>! = nil
     var arrIcon:Array<Any>! = nil
-    var arrMenu:Array<Any> = Array()
+    var arrMenu:Array<Dictionary<String,String>> = Array()
     public var pgCtrlNormalColor: UIColor!
     public var pgCtrlSelectedColor: UIColor!
     public var pgCtrlShouldHidden: Bool!
@@ -32,7 +32,7 @@ class DemoTableViewController: UITableViewController {
         let arrayAllMenu: Array<Any> = NSArray(contentsOfFile: plistPath!) as!  Array<Any>
         for index in (0..<countItem) {
 //            print("index",index,"\narrayAllMenu[index]" ,arrayAllMenu[index],"\ncountItem" ,countItem)
-            arrMenu.append(arrayAllMenu[index])
+            arrMenu.append(arrayAllMenu[index] as! Dictionary<String, String>)
         }
         tableView.reloadData()
     }

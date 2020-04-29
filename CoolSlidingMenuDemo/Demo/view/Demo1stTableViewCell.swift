@@ -17,7 +17,7 @@ class Demo1stTableViewCell: UITableViewCell,CoolSlidingMenuViewDelegate {
     public var pgCtrlShouldHidden: Bool!
     
     var slidingMenuView:CoolSlidingMenuView = CoolSlidingMenuView()
-    public var arrMenu:Array<Any> = [] {
+    var arrMenu: Array<Dictionary<String,String>> = [] {
         willSet {
             slidingMenuView.pgCtrl.isHidden = pgCtrlShouldHidden
             slidingMenuView.pgCtrlNormalColor = pgCtrlNormalColor
@@ -26,12 +26,11 @@ class Demo1stTableViewCell: UITableViewCell,CoolSlidingMenuViewDelegate {
             slidingMenuView.countCol = countCol
         }
         didSet {
-            
             slidingMenuView.arrMenu = arrMenu
         }
     }
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super .init(style: style, reuseIdentifier: reuseIdentifier)
         slidingMenuView = CoolSlidingMenuView()
         slidingMenuView.delegate = self

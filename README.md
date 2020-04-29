@@ -4,11 +4,11 @@
 
 ## 开发环境（Development environment）
 
- Mac OS 10.12+ / Xcode 8+ / Swift 3+ ,兼容Swift4(support Swift4)
+ Mac OS / Swift5.1
 ## 支持环境（Support environment）
-iOS 8+, iPhone & iPad
+iOS, iPhone & iPad
 ## 项目获取（Project acquisition）
-此处代码由Swift3.1展示，推荐使用Swift项目已经上传至github中（The code here is shown by Swift3.1, and the Swift project is recommended for uploading to GitHub）[CoolSlidingMenu](https://github.com/cba023/CoolSlidingMenu)(https://github.com/cba023/CoolSlidingMenu)
+此处代码由Swift展示，推荐使用Swift项目已经上传至github中（The code here is shown by Swift, and the Swift project is recommended for uploading to GitHub）[CoolSlidingMenu](https://github.com/cba023/CoolSlidingMenu)(https://github.com/cba023/CoolSlidingMenu)
 若要使用，请导入文件到您的项目。（To use, import the file into your project）
 简书地址（Address of JianShu）：http://www.jianshu.com/p/375fe7984571
 
